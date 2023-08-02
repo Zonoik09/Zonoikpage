@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artaxia - Animes</title>
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+<script>
+  function numerarFilas() {
+    var tabla = document.getElementById("tablaAnime");
+    var filas = tabla.getElementsByTagName("tr");
+
+    for (var i = 1; i < filas.length; i++) {
+      var contador = document.createElement("td");
+      contador.textContent = i;
+      filas[i].insertBefore(contador, filas[i].firstChild);
+    }
+  }
+
+  function buscarPorLetra(letra) {
+    var tabla = document.getElementById("tablaAnime");
+    var filas = tabla.getElementsByTagName("tr");
+
+    var contador = 0;
+
+    for (var i = 1; i < filas.length; i++) {
+      var celda = filas[i].getElementsByTagName("td")[1];
+      var contenido = celda.textContent || celda.innerText;
+
+      if (contenido.startsWith(letra)) {
+        filas[i].style.display = "";
+        contador++;
+      } else {
+        filas[i].style.display = "none";
+      }
+    }
+
+    document.getElementById("contador").textContent = "Total: " + contador;
+  }
+
+  function limpiarBusqueda() {
+    var tabla = document.getElementById("tablaAnime");
+    var filas = tabla.getElementsByTagName("tr");
+
+    for (var i = 1; i < filas.length; i++) {
+      filas[i].style.display = "";
+    }
+
+    document.getElementById("contador").textContent = "Total: " + (filas.length - 1);
+  }
+
+  window.onload = function() {
+    numerarFilas();
+  };
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">ZONOIK</a></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="sobre_mi.html">SOBRE MI</a></li>
+        <li><a href="animes_vistos.html">ANIMES</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="letras">  <p>BUSQUEDA POR CARACTERES:</p>
+      <button onclick="buscarPorLetra('.')">.</button>
+      <button onclick="buscarPorLetra('1')">1</button>
+      <button onclick="buscarPorLetra('2')">2</button>
+      <button onclick="buscarPorLetra('3')">3</button>
+      <button onclick="buscarPorLetra('4')">4</button>
+      <button onclick="buscarPorLetra('5')">5</button>
+      <button onclick="buscarPorLetra('6')">6</button>
+      <button onclick="buscarPorLetra('7')">7</button>
+      <button onclick="buscarPorLetra('8')">8</button>
+      <button onclick="buscarPorLetra('9')">9</button>
+      <button onclick="buscarPorLetra('A')">A</button>
+      <button onclick="buscarPorLetra('B')">B</button>
+      <button onclick="buscarPorLetra('C')">C</button>
+      <button onclick="buscarPorLetra('D')">D</button>
+      <button onclick="buscarPorLetra('E')">E</button>
+      <button onclick="buscarPorLetra('F')">F</button>
+      <button onclick="buscarPorLetra('G')">G</button>
+      <button onclick="buscarPorLetra('H')">H</button>
+      <button onclick="buscarPorLetra('I')">I</button>
+      <button onclick="buscarPorLetra('J')">J</button>
+      <button onclick="buscarPorLetra('K')">K</button>
+      <button onclick="buscarPorLetra('L')">L</button>
+      <button onclick="buscarPorLetra('M')">M</button>
+      <button onclick="buscarPorLetra('N')">N</button>
+      <button onclick="buscarPorLetra('O')">O</button>
+      <button onclick="buscarPorLetra('P')">P</button>
+      <button onclick="buscarPorLetra('Q')">Q</button>
+      <button onclick="buscarPorLetra('R')">R</button>
+      <button onclick="buscarPorLetra('S')">S</button>
+      <button onclick="buscarPorLetra('T')">T</button>
+      <button onclick="buscarPorLetra('U')">U</button>
+      <button onclick="buscarPorLetra('V')">V</button>
+      <button onclick="buscarPorLetra('W')">W</button>
+      <button onclick="buscarPorLetra('X')">X</button>
+      <button onclick="buscarPorLetra('Y')">Y</button>
+      <button onclick="buscarPorLetra('Z')">Z</button>
+      <button onclick="limpiarBusqueda()">Limpiar</button>
+    </div>
+    <div class="Tablaanime">
+      <table id="tablaAnime">
+        <col>
+        <tr>
+          <th>#</th>
+          <th>LISTADO DE ANIME</th>
+        </tr>
+        <tr >
+          <td >.hack//root</td>
+    
+        </tr>
+        <tr >
+          <td >100-man no inochi no Ue ni Ore wa
+            Tatteiru</td>
+    
+        </tr>
+        <tr >
+          <td >100-man no Inochi no Ue ni Ore wa
+            Tatteiru 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >11 Eyes </td>
+    
+        </tr>
+        <tr >
+          <td >3D KANOJO: REAL GIRL</td>
+    
+        </tr>
+        <tr >
+          <td >3D Kanojo: Real girl 2nd season</td>
+    
+        </tr>
+        <tr >
+          <td >91 days</td>
+    
+        </tr>
+        <tr >
+          <td >Aa! Megami-sama! </td>
+    
+        </tr>
+        <tr >
+          <td >Aa! Megami-sama! (2011)</td>
+    
+        </tr>
+        <tr >
+          <td >Aa! Megami-sama!: Sorezore no Tsubasa</td>
+    
+        </tr>
+        <tr >
+          <td >Aa! Megami-sama!: Tatakau Tsubasa</td>
+    
+        </tr>
+        <tr >
+          <td >abslute duo</td>
+    
+        </tr>
+        <tr >
+          <td >accel world</td>
+    
+        </tr>
+        <tr >
+          <td >Acchi Kocchi</td>
+    
+        </tr>
+        <tr >
+          <td >Adachi to shimamura</td>
+    
+        </tr>
+        <tr >
+          <td >Aharen-san wa Hakarenai</td>
+    
+        </tr>
+        <tr >
+          <td >Ahiru no Sora</td>
+    
+        </tr>
+        <tr >
+          <td >AHO GIRL</td>
+    
+        </tr>
+        <tr >
+          <td >Aishiteruze Baby</td>
+    
+        </tr>
+        <tr >
+          <td >ajimu</td>
+    
+        </tr>
+        <tr >
+          <td >AKAGAMI NO SHIRAYUKI-HIME</td>
+    
+        </tr>
+        <tr >
+          <td >akame ga kill</td>
+    
+        </tr>
+        <tr >
+          <td >akane iro ni somaru saka</td>
+    
+        </tr>
+        <tr >
+          <td >AKANEIRO NI SOMARU SAKA</td>
+    
+        </tr>
+        <tr >
+          <td >akikan</td>
+    
+        </tr>
+        <tr >
+          <td >Akira(PELICULA)</td>
+    
+        </tr>
+        <tr >
+          <td >Akkun to Kanojo</td>
+    
+        </tr>
+        <tr >
+          <td >Akudama drive</td>
+    
+        </tr>
+        <tr >
+          <td >Akuyaku Reijou nanode Last Boss wo
+            Kattemimashita</td>
+    
+        </tr>
+        <tr >
+          <td >Amaenaide yo!!</td>
+    
+        </tr>
+        <tr >
+          <td >Amaenaide yo!! 2</td>
+    
+        </tr>
+        <tr >
+          <td >AMAGAMI SS</td>
+    
+        </tr>
+        <tr >
+          <td >Amagi Brilliant Park</td>
+    
+        </tr>
+        <tr >
+          <td >anatsu kyoushitsu (Las dos temporadas)</td>
+    
+        </tr>
+        <tr >
+          <td >AO HARU RIDE</td>
+    
+        </tr>
+        <tr >
+          <td >ao no exorcist</td>
+    
+        </tr>
+        <tr >
+          <td >ao no exorcist :kyoto FUJOUOU-HEN</td>
+    
+        </tr>
+        <tr >
+          <td >Aoharu x Kikanjuu</td>
+    
+        </tr>
+        <tr >
+          <td >Aoharu x Kikanjuu Special</td>
+    
+        </tr>
+        <tr >
+          <td >aoi sekai no shuushin de</td>
+    
+        </tr>
+        <tr >
+          <td >Araburu Kisetsu no Otome-domo yo</td>
+    
+        </tr>
+        <tr >
+          <td >Arifureta Shokugyou de Sekai Saikyou</td>
+    
+        </tr>
+        <tr >
+          <td >Arifureta Shokugyou de Sekai Saikyou 2nd
+            Season</td>
+    
+        </tr>
+        <tr >
+          <td >ARSLAN SENKI</td>
+    
+        </tr>
+        <tr >
+          <td >Arslan senki: Fuujin ranbu</td>
+    
+        </tr>
+        <tr >
+          <td >Arte</td>
+    
+        </tr>
+        <tr >
+          <td >Asobi Asobase</td>
+    
+        </tr>
+        <tr >
+          <td >Assassins Pride</td>
+    
+        </tr>
+        <tr >
+          <td >Assault Lily: Bouquet</td>
+    
+        </tr>
+        <tr >
+          <td >asu no yoichi</td>
+    
+        </tr>
+        <tr >
+          <td >b gata h kei</td>
+    
+        </tr>
+        <tr >
+          <td >Back Street Girls: Gokudolls</td>
+    
+        </tr>
+        <tr >
+          <td >BAKA TO TEST TO SHOUKANJUU</td>
+    
+        </tr>
+        <tr >
+          <td >BAKEMONOGATARI</td>
+    
+        </tr>
+        <tr >
+          <td >Baki (2018)</td>
+    
+        </tr>
+        <tr >
+          <td >Beastars</td>
+    
+        </tr>
+        <tr >
+          <td >Beck</td>
+    
+        </tr>
+        <tr >
+          <td >Benriya Saitou-san, Isekai ni Iku</td>
+    
+        </tr>
+        <tr >
+          <td >BEN-TO</td>
+    
+        </tr>
+        <tr >
+          <td >Berserk</td>
+    
+        </tr>
+        <tr >
+          <td >birdy the migthy-decode</td>
+    
+        </tr>
+        <tr >
+          <td >BLACK ClOVER</td>
+    
+        </tr>
+        <tr >
+          <td >BLEACH</td>
+    
+        </tr>
+        <tr >
+          <td >Bleach: Sennen Kessen-hen</td>
+    
+        </tr>
+        <tr >
+          <td >blood lad</td>
+    
+        </tr>
+        <tr >
+          <td >Blood-c</td>
+    
+        </tr>
+        <tr >
+          <td >bloodivores</td>
+    
+        </tr>
+        <tr >
+          <td >boku no hero</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia 2</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia 3</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia 4</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia 5</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia the Movie 2:
+            Heroes:Rising</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia the Movie 3: World
+            Heroes Mission</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Hero Academia the Movie: Futari
+            no Hero</td>
+    
+        </tr>
+        <tr >
+          <td >boku no hero(todas las temporadas)</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Kanojo ga Majimesugiru Sho-bitch
+            na Ken</td>
+    
+        </tr>
+        <tr >
+          <td >Boku no Kokoro no Yabai Yatsu</td>
+    
+        </tr>
+        <tr >
+          <td >bokura wa minna kawaisou</td>
+    
+        </tr>
+        <tr >
+          <td >BOKUSATSU TENSHI DOKURO-CHAN</td>
+    
+        </tr>
+        <tr >
+          <td >Bokutachi no Remake</td>
+    
+        </tr>
+        <tr >
+          <td >Bokutachi wa Benkyou ga Dekinai 2</td>
+    
+        </tr>
+        <tr >
+          <td >Bokutachi wa benyou ga dekinai</td>
+    
+        </tr>
+        <tr >
+          <td >Boruto</td>
+    
+        </tr>
+        <tr >
+          <td >bosou renkin</td>
+    
+        </tr>
+        <tr >
+          <td >bosou shoujo machivellianism</td>
+    
+        </tr>
+        <tr >
+          <td >campione</td>
+    
+        </tr>
+        <tr >
+          <td >Cestvs: The Roman Fighter</td>
+    
+        </tr>
+        <tr >
+          <td >chaos child</td>
+    
+        </tr>
+        <tr >
+          <td >chaos head</td>
+    
+        </tr>
+        <tr >
+          <td >charlotte</td>
+    
+        </tr>
+        <tr >
+          <td >Cheat Kusushi no Slow Life: Isekai ni
+            Tsukurou Drugstore</td>
+    
+        </tr>
+        <tr >
+          <td >Chio-chan no Tsuugakuro</td>
+    
+        </tr>
+        <tr >
+          <td >Choujin Koukousei-tachi wa Isekai demo
+            Yoyuu de Ikinuku you desu!</td>
+    
+        </tr>
+        <tr >
+          <td >Chu-Bra!! </td>
+    
+        </tr>
+        <tr >
+          <td >CITRUS </td>
+    
+        </tr>
+        <tr >
+          <td >clannad </td>
+    
+        </tr>
+        <tr >
+          <td >clannad after history </td>
+    
+        </tr>
+        <tr >
+          <td >Classroom of the Elite </td>
+    
+        </tr>
+        <tr >
+          <td >Code breaker</td>
+    
+        </tr>
+        <tr >
+          <td >Code-E</td>
+    
+        </tr>
+        <tr >
+          <td >Conception </td>
+    
+        </tr>
+        <tr >
+          <td >Cross Game</td>
+    
+        </tr>
+        <tr >
+          <td >D.N.Angel</td>
+    
+        </tr>
+        <tr >
+          <td >DAITOSHOKAN NO HITSUJIKAI</td>
+    
+        </tr>
+        <tr >
+          <td >dakara boku wa, H ga Dekinai</td>
+    
+        </tr>
+        <tr >
+          <td >Danganronpa:the animation</td>
+    
+        </tr>
+        <tr >
+          <td >danmachi</td>
+    
+        </tr>
+        <tr >
+          <td >DANSHI KOUKOUSEI NO NICHIJOU</td>
+    
+        </tr>
+        <tr >
+          <td >Darwin's Game</td>
+    
+        </tr>
+        <tr >
+          <td >Date A Life (todas las temporadas)</td>
+    
+        </tr>
+        <tr >
+          <td >Date A Live (todas las temporadas)</td>
+    
+        </tr>
+        <tr >
+          <td >daungeon ni deai wo</td>
+    
+        </tr>
+        <tr >
+          <td >Days </td>
+    
+        </tr>
+        <tr >
+          <td >Deadman Wonderland</td>
+    
+        </tr>
+        <tr >
+          <td >DEATH MARCH KARA HAJIMARU ISEKAI
+            KYOUSOUKYOKU</td>
+    
+        </tr>
+        <tr >
+          <td >Deatte 5-byou de Battle</td>
+    
+        </tr>
+        <tr >
+          <td >Demi-chan wa kataritai</td>
+    
+        </tr>
+        <tr >
+          <td >demon kingd aimao</td>
+    
+        </tr>
+        <tr >
+          <td >Denki-Gai no Honya-san</td>
+    
+        </tr>
+        <tr >
+          <td >Denpa Onna to Seishun Otoko</td>
+    
+        </tr>
+        <tr >
+          <td >desaparecido [NETFLIX]</td>
+    
+        </tr>
+        <tr >
+          <td >DEVILS LINE</td>
+    
+        </tr>
+        <tr >
+          <td >D-Frag! </td>
+    
+        </tr>
+        <tr >
+          <td >Diamond no ace</td>
+    
+        </tr>
+        <tr >
+          <td >DIES IRAE </td>
+    
+        </tr>
+        <tr >
+          <td >DNA2</td>
+    
+        </tr>
+        <tr >
+          <td >Dogeza de Tanondemita</td>
+    
+        </tr>
+        <tr >
+          <td >Dokyuu Hentai HxEros </td>
+    
+        </tr>
+        <tr >
+          <td >Domestic na kanojo</td>
+    
+        </tr>
+        <tr >
+          <td >Dororo</td>
+    
+        </tr>
+        <tr >
+          <td >Dr. Stone: Ryuusui</td>
+    
+        </tr>
+        <tr >
+          <td >Dr. Stone: Stone Wars</td>
+    
+        </tr>
+        <tr >
+          <td >Dr.Stone</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon ball</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon ball gt</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon ball kai</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon ball super</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon ball z</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon crisis</td>
+    
+        </tr>
+        <tr >
+          <td >Dragon, Ie wo Kau</td>
+    
+        </tr>
+        <tr >
+          <td >dumbbell nan kilo moteru?</td>
+    
+        </tr>
+        <tr >
+          <td >Dungeon ni Deai wo Motomeru no wa
+            Machigatteiru Darou ka II</td>
+    
+        </tr>
+        <tr >
+          <td >Dungeon ni Deai wo Motomeru no wa
+            machigatteiru darou ka III</td>
+    
+        </tr>
+        <tr >
+          <td >Dungeon ni Deai wo Motomeru no wa
+            Machigatteiru Darou ka IV</td>
+    
+        </tr>
+        <tr >
+          <td >Durarara</td>
+    
+        </tr>
+        <tr >
+          <td >ecorder and Randsell Mi</td>
+    
+        </tr>
+        <tr >
+          <td >Edens Zero</td>
+    
+        </tr>
+        <tr >
+          <td >Eiyuuou, Bu wo Kiwameru Tame Tenseisu:
+            Soshite, Sekai Saikyou no Minarai Kishi&#9792;</td>
+    
+        </tr>
+        <tr >
+          <td >eldlive</td>
+    
+        </tr>
+        <tr >
+          <td >elfen lied</td>
+    
+        </tr>
+        <tr >
+          <td >Enen no Shouboutai</td>
+    
+        </tr>
+        <tr >
+          <td >Enen no Shouboutai: Ni no shou</td>
+    
+        </tr>
+        <tr >
+          <td >Eromanga-sensei</td>
+    
+        </tr>
+        <tr >
+          <td >Evil or live</td>
+    
+        </tr>
+        <tr >
+          <td >fairy tail</td>
+    
+        </tr>
+        <tr >
+          <td >fairy tail 2014</td>
+    
+        </tr>
+        <tr >
+          <td >Fairy Tail: Final Series</td>
+    
+        </tr>
+        <tr >
+          <td >Fantasy Bishoujo Juniku Ojisan to</td>
+    
+        </tr>
+        <tr >
+          <td >Fight Ippatsu! Juden-chan!!</td>
+    
+        </tr>
+        <tr >
+          <td >fortune arterial</td>
+    
+        </tr>
+        <tr >
+          <td >Fortune Arterial: Akai Yakusoku </td>
+    
+        </tr>
+        <tr >
+          <td >freezing</td>
+    
+        </tr>
+        <tr >
+          <td >Fruits Basket</td>
+    
+        </tr>
+        <tr >
+          <td >Fugou Keiji: Balance:Unlimited</td>
+    
+        </tr>
+        <tr >
+          <td >fukigen na mononokean</td>
+    
+        </tr>
+        <tr >
+          <td >fukumenkei noise</td>
+    
+        </tr>
+        <tr >
+          <td >full metal alchemist</td>
+    
+        </tr>
+        <tr >
+          <td >full metal alchemist: Brotherhood</td>
+    
+        </tr>
+        <tr >
+          <td >Full metal panic!</td>
+    
+        </tr>
+        <tr >
+          <td >Full Metal Panic! Invisible Victory</td>
+    
+        </tr>
+        <tr >
+          <td >Full metal panic! The second Raid</td>
+    
+        </tr>
+        <tr >
+          <td >Full metal panic? Fumoffu</td>
+    
+        </tr>
+        <tr >
+          <td >FULLMETAL ALCHEMIST </td>
+    
+        </tr>
+        <tr >
+          <td >Fumetsu no Anata e 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Futakoi</td>
+    
+        </tr>
+        <tr >
+          <td >Futoku no Guild</td>
+    
+        </tr>
+        <tr >
+          <td >Fuufu Ijou, Koibito Miman</td>
+    
+        </tr>
+        <tr >
+          <td >fuuka</td>
+    
+        </tr>
+        <tr >
+          <td >Gaikotsu Kishi-sama, Tadaima Isekai e
+            Odekakechuu</td>
+    
+        </tr>
+        <tr >
+          <td >Gakuen Babysitters</td>
+    
+        </tr>
+        <tr >
+          <td >Gakusen Toshi Asterisk</td>
+    
+        </tr>
+        <tr >
+          <td >Gal to kyouryuu</td>
+    
+        </tr>
+        <tr >
+          <td >Gangsta</td>
+    
+        </tr>
+        <tr >
+          <td >Gate: Jieitai Kanochi nite, Kaku
+            Tatakaeri</td>
+    
+        </tr>
+        <tr >
+          <td >Gate: Jieitai Kanochi nite, Kaku
+            Tatakaeri - Enryuu-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Gekkan Shoujo Nozaki-kun</td>
+    
+        </tr>
+        <tr >
+          <td >Gekkan Shoujo Nozaki-kun Specials</td>
+    
+        </tr>
+        <tr >
+          <td >Genjitsu Shugi Yuusha no Oukoku Saikenki</td>
+    
+        </tr>
+        <tr >
+          <td >Girls Bravo</td>
+    
+        </tr>
+        <tr >
+          <td >Given Movie</td>
+    
+        </tr>
+        <tr >
+          <td >Gleinpnir</td>
+    
+        </tr>
+        <tr >
+          <td >Gokusen</td>
+    
+        </tr>
+        <tr >
+          <td >gokusen toshi asterisk </td>
+    
+        </tr>
+        <tr >
+          <td >Gokushufudou</td>
+    
+        </tr>
+        <tr >
+          <td >Golden Boy</td>
+    
+        </tr>
+        <tr >
+          <td >Golden time</td>
+    
+        </tr>
+        <tr >
+          <td >gotoubun no hanayome</td>
+    
+        </tr>
+        <tr >
+          <td >Gotoubun no Hanayome 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Grancrest Senki</td>
+    
+        </tr>
+        <tr >
+          <td >Grand blue</td>
+    
+        </tr>
+        <tr >
+          <td >grappler Baki</td>
+    
+        </tr>
+        <tr >
+          <td >Grappler Baki:Tournament hen</td>
+    
+        </tr>
+        <tr >
+          <td >GREAT TEACHER ONIZUKA</td>
+    
+        </tr>
+        <tr >
+          <td >Green Green</td>
+    
+        </tr>
+        <tr >
+          <td >grisaia no kajitsu</td>
+    
+        </tr>
+        <tr >
+          <td >grisaia no rakuen</td>
+    
+        </tr>
+        <tr >
+          <td >Hachi-nan tte, Sore wa Nai deshou!</td>
+    
+        </tr>
+        <tr >
+          <td >haganai</td>
+    
+        </tr>
+        <tr >
+          <td >haganai next</td>
+    
+        </tr>
+        <tr >
+          <td >Hagure yuusha no estetica</td>
+    
+        </tr>
+        <tr >
+          <td >HAI TO GENSOU NO GRIMGAR</td>
+    
+        </tr>
+        <tr >
+          <td >Haikyuu!!</td>
+    
+        </tr>
+        <tr >
+          <td >Haikyuu!! second season</td>
+    
+        </tr>
+        <tr >
+          <td >Haikyuu!! Third Season</td>
+    
+        </tr>
+        <tr >
+          <td >Haikyuu!!: to the top</td>
+    
+        </tr>
+        <tr >
+          <td >Hajime no ippo</td>
+    
+        </tr>
+        <tr >
+          <td >Hajime no ippo: New Challenger</td>
+    
+        </tr>
+        <tr >
+          <td >Hajime no ippo: Rising</td>
+    
+        </tr>
+        <tr >
+          <td >Hakozume: Kouban Joshi no Gyakushuu</td>
+    
+        </tr>
+        <tr >
+          <td >HANDA-KUN</td>
+    
+        </tr>
+        <tr >
+          <td >Hanma Baki: Son of Ogre</td>
+    
+        </tr>
+        <tr >
+          <td >Hantsu x Trash</td>
+    
+        </tr>
+        <tr >
+          <td >Hataage! Kemono Michi</td>
+    
+        </tr>
+        <tr >
+          <td >Hataraku Maou-sama!!</td>
+    
+        </tr>
+        <tr >
+          <td >Hataraku saibou</td>
+    
+        </tr>
+        <tr >
+          <td >Hataraku Saibou Black</td>
+    
+        </tr>
+        <tr >
+          <td >Hataraku Saibou!!</td>
+    
+        </tr>
+        <tr >
+          <td >Hayate no Gotoku!</td>
+    
+        </tr>
+        <tr >
+          <td >Hello World</td>
+    
+        </tr>
+        <tr >
+          <td >Hentai ouji to warawanai neko</td>
+    
+        </tr>
+        <tr >
+          <td >Heroine Tarumono! Kiraware Heroine to
+            Naisho no Oshigoto</td>
+    
+        </tr>
+        <tr >
+          <td >hidan no aria</td>
+    
+        </tr>
+        <tr >
+          <td >Hige wo Soru. Soshite Joshikousei wo
+            Hirou</td>
+    
+        </tr>
+        <tr >
+          <td >High school dxd</td>
+    
+        </tr>
+        <tr >
+          <td >High school dxd </td>
+    
+        </tr>
+        <tr >
+          <td >High school dxd born</td>
+    
+        </tr>
+        <tr >
+          <td >High School DxD Hero</td>
+    
+        </tr>
+        <tr >
+          <td >High School dxd New</td>
+    
+        </tr>
+        <tr >
+          <td >Hign School DxD Born</td>
+    
+        </tr>
+        <tr >
+          <td >Himouto! Umaru-chan</td>
+    
+        </tr>
+        <tr >
+          <td >Himouto! Umaru-chan R </td>
+    
+        </tr>
+        <tr >
+          <td >HINAMATSURI</td>
+    
+        </tr>
+        <tr >
+          <td >hitori no shita:the outcast</td>
+    
+        </tr>
+        <tr >
+          <td >Honzuki no Gekokujou: Shisho ni Naru Tame
+            ni wa Shudan wo Erandeiraremasen</td>
+    
+        </tr>
+        <tr >
+          <td >Honzuki no Gekokujou: Shisho ni Naru Tame
+            ni wa Shudan wo Erandeiraremasen 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Honzuki no Gekokujou: Shisho ni Naru Tame
+            ni wa Shudan wo Erandeiraremasen 3rd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Horimiya</td>
+    
+        </tr>
+        <tr >
+          <td >Hoshi matsu hito</td>
+    
+        </tr>
+        <tr >
+          <td >Hoshizora e Kakaru Hashi</td>
+    
+        </tr>
+        <tr >
+          <td >Housekishou Richard-shi no Nazo
+            Kantei</td>
+    
+        </tr>
+        <tr >
+          <td >HUNTER X HUNTER</td>
+    
+        </tr>
+        <tr >
+          <td >Hyakuren no haou to seiyaku no valkyria</td>
+    
+        </tr>
+        <tr >
+          <td >Hyouken no Majutsushi ga Sekai wo Suberu</td>
+    
+        </tr>
+        <tr >
+          <td >Ichiban Ushiro no Daimaou</td>
+    
+        </tr>
+        <tr >
+          <td >Ijiranaide, Nagatoro-san </td>
+    
+        </tr>
+        <tr >
+          <td >ikebukuro west gate park</td>
+    
+        </tr>
+        <tr >
+          <td >Ikkitousen</td>
+    
+        </tr>
+        <tr >
+          <td >Inari Konkon Koi Iroha</td>
+    
+        </tr>
+        <tr >
+          <td >infinite stratos</td>
+    
+        </tr>
+        <tr >
+          <td >inu x boku ss</td>
+    
+        </tr>
+        <tr >
+          <td >Inuyashiki</td>
+    
+        </tr>
+        <tr >
+          <td >Iriya no Sora UFO no Natsu</td>
+    
+        </tr>
+        <tr >
+          <td >Irozoku sekai no ashita kara</td>
+    
+        </tr>
+        <tr >
+          <td >IS: infinite stratos 2</td>
+    
+        </tr>
+        <tr >
+          <td >Iseaki Maou to shoukan shojo no dorei
+            majutsu</td>
+    
+        </tr>
+        <tr >
+          <td >Isekai Cheat Magician</td>
+    
+        </tr>
+        <tr >
+          <td >Isekai Maou to Shoukan Shoujo no Dorei
+            Majutsu (omega)</td>
+    
+        </tr>
+        <tr >
+          <td >Isekai Meikyuu de Harem wo</td>
+    
+        </tr>
+        <tr >
+          <td >ISEKAI NO SEIKISHI MONOGATARI</td>
+    
+        </tr>
+        <tr >
+          <td >Isekai Nonbiri Nouka</td>
+    
+        </tr>
+        <tr >
+          <td >isekai wa smartphone to tomo ni</td>
+    
+        </tr>
+        <tr >
+          <td >Isekai wa Smartphone to Tomo ni </td>
+    
+        </tr>
+        <tr >
+          <td >Isekai Yakkyoku</td>
+    
+        </tr>
+        <tr >
+          <td >isuca</td>
+    
+        </tr>
+        <tr >
+          <td >Itai no wa Iya nano de Bougyoryoku ni
+            Kyokufuri Shitai to Omoimasu.</td>
+    
+        </tr>
+        <tr >
+          <td >itazura na kiss </td>
+    
+        </tr>
+        <tr >
+          <td >Iwa kakeru!:Sport Climbing Girls</td>
+    
+        </tr>
+        <tr >
+          <td >Iya na Kao sare nagara Opantsu Misete
+            Moraitai</td>
+    
+        </tr>
+        <tr >
+          <td >Jaku-Chara Tomozaki-kun</td>
+    
+        </tr>
+        <tr >
+          <td >jitsu wa watashi wa</td>
+    
+        </tr>
+        <tr >
+          <td >Jojo no Kimyou na Bouken: Diamond wa
+            Kudakenai</td>
+    
+        </tr>
+        <tr >
+          <td >JoJo no Kimyou na Bouken: Ougon no Kaze</td>
+    
+        </tr>
+        <tr >
+          <td >JoJo's Bizarre Adventure The Animation</td>
+    
+        </tr>
+        <tr >
+          <td >JoJo's Bizarre Adventure: Stardust
+            Crusaders</td>
+    
+        </tr>
+        <tr >
+          <td >Jojo's Bizarre Adventure: Stardust
+            Crusaders 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Joshikousei no Mudazukai</td>
+    
+        </tr>
+        <tr >
+          <td >Jujutsu Kaisen (TV)</td>
+    
+        </tr>
+        <tr >
+          <td >Juuou Mujin no Fafnir</td>
+    
+        </tr>
+        <tr >
+          <td >kaguya-sama wa kokurasetai: Tensai-tachi
+            no renai Zunousen</td>
+    
+        </tr>
+        <tr >
+          <td >Kaguya-sama wa kokurasetai: Tensai-tachi
+            no renai zunousen 2nd season</td>
+    
+        </tr>
+        <tr >
+          <td >KAICHOU WA MAID-SAMA!</td>
+    
+        </tr>
+        <tr >
+          <td >Kaichou wa Maid-sama!: Omake dayo! </td>
+    
+        </tr>
+        <tr >
+          <td >Kaiko sareta Ankoku Heishi (30-dai) no
+            Slow na Second Lif</td>
+    
+        </tr>
+        <tr >
+          <td >kakegurui</td>
+    
+        </tr>
+        <tr >
+          <td >Kakkou no Iinazuke</td>
+    
+        </tr>
+        <tr >
+          <td >Kamisama Hajimemashita</td>
+    
+        </tr>
+        <tr >
+          <td >Kamisama Hajimemashita: Kako-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Kamisama Hajimemashita: Kamisama,
+            Shiawase ni Naru</td>
+    
+        </tr>
+        <tr >
+          <td >Kamisama Hajimemashita?</td>
+    
+        </tr>
+        <tr >
+          <td >kamisama kazoku</td>
+    
+        </tr>
+        <tr >
+          <td >Kamisama ni Natta Hi</td>
+    
+        </tr>
+        <tr >
+          <td >kamisama no memochou</td>
+    
+        </tr>
+        <tr >
+          <td >Kami-tachi ni Hirowareta Otoko</td>
+    
+        </tr>
+        <tr >
+          <td >Kami-tachi ni Hirowareta Otoko 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Kampfer</td>
+    
+        </tr>
+        <tr >
+          <td >KANOJO GA FLAG WO ORARETARA</td>
+    
+        </tr>
+        <tr >
+          <td >Kanojo mo Kanojo </td>
+    
+        </tr>
+        <tr >
+          <td >Kanojo, Okarishimasu</td>
+    
+        </tr>
+        <tr >
+          <td >KANOKON</td>
+    
+        </tr>
+        <tr >
+          <td >Karakai jouzu no takagi-san</td>
+    
+        </tr>
+        <tr >
+          <td >Karakai Jouzu no Takagi-san </td>
+    
+        </tr>
+        <tr >
+          <td >Karakai Jouzu no Takagi-san 2</td>
+    
+        </tr>
+        <tr >
+          <td >Karakai Jouzu no Takagi-san 3</td>
+    
+        </tr>
+        <tr >
+          <td >Karakuri circus</td>
+    
+        </tr>
+        <tr >
+          <td >karin chibi vampire</td>
+    
+        </tr>
+        <tr >
+          <td >KATEKYO HITMAN REBORN</td>
+    
+        </tr>
+        <tr >
+          <td >Katsute kami datta kemono.tachi e</td>
+    
+        </tr>
+        <tr >
+          <td >Kawaii dake ja Nai Shikimori-san</td>
+    
+        </tr>
+        <tr >
+          <td >Kawaikereba Hentai demo Suki ni Natte
+            Kuremasu ka?</td>
+    
+        </tr>
+        <tr >
+          <td >kaze no stigma</td>
+    
+        </tr>
+        <tr >
+          <td >Keijo!!!!!!!! </td>
+    
+        </tr>
+        <tr >
+          <td >Kemono Jihen</td>
+    
+        </tr>
+        <tr >
+          <td >Kenja no Deshi wo Nanoru Kenja</td>
+    
+        </tr>
+        <tr >
+          <td >Kenja no mago</td>
+    
+        </tr>
+        <tr >
+          <td >KEPPEKI DANSHI! AOYAMA-KUN</td>
+    
+        </tr>
+        <tr >
+          <td >KILLING BITES</td>
+    
+        </tr>
+        <tr >
+          <td >Kimetsu no Yaiba</td>
+    
+        </tr>
+        <tr >
+          <td >Kimetsu no Yaiba Movie: Mugen Ressha-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Kimetsu no Yaiba: Yuukaku-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi ga Aruji de Shitsuji ga Ore de</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi ni Todoke</td>
+    
+        </tr>
+        <tr >
+          <td >kimi no na wa</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi nomi zo shiru sekai</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi nomi zo shiru sekai 2</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi nomi zo shiru sekai: yonnin to idol</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi to, Nami ni Noretara</td>
+    
+        </tr>
+        <tr >
+          <td >Kimi toi boku no saigo no senjou, aruiwa
+            sekai ga hajimaru seisen</td>
+    
+        </tr>
+        <tr >
+          <td >Kingdom</td>
+    
+        </tr>
+        <tr >
+          <td >Kingdom 2</td>
+    
+        </tr>
+        <tr >
+          <td >Kingdom 3rd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Kingdom 4th Season</td>
+    
+        </tr>
+        <tr >
+          <td >Kinsou no Vermeil</td>
+    
+        </tr>
+        <tr >
+          <td >Kiseijuu:sei no kakuritsu</td>
+    
+        </tr>
+        <tr >
+          <td >Kishuku gakkou no juliet</td>
+    
+        </tr>
+        <tr >
+          <td >kissxsis</td>
+    
+        </tr>
+        <tr >
+          <td >KNIGHT'S &amp; MAGIC</td>
+    
+        </tr>
+        <tr >
+          <td >kobayashi-san chi no maid dragon</td>
+    
+        </tr>
+        <tr >
+          <td >koe no katachi [pel�cula]</td>
+    
+        </tr>
+        <tr >
+          <td >KOI TO SENKYO TO CHOCOLATE</td>
+    
+        </tr>
+        <tr >
+          <td >Koi to Yobu ni wa Kimochi Warui</td>
+    
+        </tr>
+        <tr >
+          <td >KOI WA AMEAGARI NO YOU NI</td>
+    
+        </tr>
+        <tr >
+          <td >Komi-san wa, Comyushou desu</td>
+    
+        </tr>
+        <tr >
+          <td >Komori-san wa kotowarenai!</td>
+    
+        </tr>
+        <tr >
+          <td >kono naka ni hitori imouto ga iru</td>
+    
+        </tr>
+        <tr >
+          <td >Kono oto tomare!</td>
+    
+        </tr>
+        <tr >
+          <td >kono oto tomare! 2nd</td>
+    
+        </tr>
+        <tr >
+          <td >kono subarashii sekai ni shukufuku wo!</td>
+    
+        </tr>
+        <tr >
+          <td >Kono Subarashii Sekai ni Shukufuku wo! 2</td>
+    
+        </tr>
+        <tr >
+          <td >Kono Subarashii Sekai ni Shukufuku wo!:
+            Kurenai Densetsu</td>
+    
+        </tr>
+        <tr >
+          <td >Kono yo no hate de koi wo utau shoujo
+            YU-NO</td>
+    
+        </tr>
+        <tr >
+          <td >kotoura-san</td>
+    
+        </tr>
+        <tr >
+          <td >Kumichou Musume to Sewagakari</td>
+    
+        </tr>
+        <tr >
+          <td >Kumo Desu ga, Nani ka?</td>
+    
+        </tr>
+        <tr >
+          <td >Kunoichi Tsubaki no Mune no Uchi</td>
+    
+        </tr>
+        <tr >
+          <td >Kuro no Shoukanshi</td>
+    
+        </tr>
+        <tr >
+          <td >KUROKO NO BASKET</td>
+    
+        </tr>
+        <tr >
+          <td >KUROKO NO BASKET 2</td>
+    
+        </tr>
+        <tr >
+          <td >KUROKO NO BASKET 3</td>
+    
+        </tr>
+        <tr >
+          <td >kuusen madoshi kouhosei</td>
+    
+        </tr>
+        <tr >
+          <td >Kuusen Madoushi Kouhosei no Kyoukan</td>
+    
+        </tr>
+        <tr >
+          <td >KUZU NO HONKAI</td>
+    
+        </tr>
+        <tr >
+          <td >Kyou no Asuka Show</td>
+    
+        </tr>
+        <tr >
+          <td >Kyuukyoku Shinka shita Full Dive RPG ga
+            Genjitsu yori mo Kusoge Dattara</td>
+    
+        </tr>
+        <tr >
+          <td >ladies versus butles</td>
+    
+        </tr>
+        <tr >
+          <td >Ladies vs Butlers!</td>
+    
+        </tr>
+        <tr >
+          <td >Leadale no Daichi nite</td>
+    
+        </tr>
+        <tr >
+          <td >Log Horizon</td>
+    
+        </tr>
+        <tr >
+          <td >Love live!</td>
+    
+        </tr>
+        <tr >
+          <td >Love live! 2</td>
+    
+        </tr>
+        <tr >
+          <td >Luck and logic</td>
+    
+        </tr>
+        <tr >
+          <td >Machine-Doll wa kizutsukanai </td>
+    
+        </tr>
+        <tr >
+          <td >Madan no ou to vanadis</td>
+    
+        </tr>
+        <tr >
+          <td >magi;sinbad no bouken</td>
+    
+        </tr>
+        <tr >
+          <td >Magic Kaito</td>
+    
+        </tr>
+        <tr >
+          <td >magic kaito 1412</td>
+    
+        </tr>
+        <tr >
+          <td >Magic kyun renaissance</td>
+    
+        </tr>
+        <tr >
+          <td >mahou sensou</td>
+    
+        </tr>
+        <tr >
+          <td >Mahou Shoujo Ikusei Keikaku</td>
+    
+        </tr>
+        <tr >
+          <td >mahouka kaukou no rettousei </td>
+    
+        </tr>
+        <tr >
+          <td >Mahoutsukai Reimeiki</td>
+    
+        </tr>
+        <tr >
+          <td >Mairimashita! Iruma-kun</td>
+    
+        </tr>
+        <tr >
+          <td >Mairimashita! Iruma-kun 2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >maji de watashi ni koi shinasai</td>
+    
+        </tr>
+        <tr >
+          <td >Majo no Tabitabi</td>
+    
+        </tr>
+        <tr >
+          <td >Major 2nd </td>
+    
+        </tr>
+        <tr >
+          <td >MAJOR S1</td>
+    
+        </tr>
+        <tr >
+          <td >maken-ki</td>
+    
+        </tr>
+        <tr >
+          <td >Mamahaha no Tsurego ga Motokano datta</td>
+    
+        </tr>
+        <tr >
+          <td >Mangaka-san to Assistant-san to The
+            Animation</td>
+    
+        </tr>
+        <tr >
+          <td >Maou Gakuin no Futekigousha</td>
+    
+        </tr>
+        <tr >
+          <td >Maoujou de oyasumi</td>
+    
+        </tr>
+        <tr >
+          <td >maou-sama, retry!</td>
+    
+        </tr>
+        <tr >
+          <td >Maoyuu Maou yuusha</td>
+    
+        </tr>
+        <tr >
+          <td >Mars Red</td>
+    
+        </tr>
+        <tr >
+          <td >Masamune-kun no Revenge</td>
+    
+        </tr>
+        <tr >
+          <td >Masamure kun no revenge</td>
+    
+        </tr>
+        <tr >
+          <td >Mashiro no Oto</td>
+    
+        </tr>
+        <tr >
+          <td >mayo chiki</td>
+    
+        </tr>
+        <tr >
+          <td >Mayonaka no Occult Koumuin</td>
+    
+        </tr>
+        <tr >
+          <td>Megami-ryou
+              no Ryoubo-kun</td>
+    
+        </tr>
+        <tr >
+          <td >meijii tokyo renka</td>
+    
+        </tr>
+        <tr >
+          <td >Meikyuu Black Company</td>
+    
+        </tr>
+        <tr >
+          <td >Midara na Ao-chan wa Benkyou ga Dekinai</td>
+    
+        </tr>
+        <tr >
+          <td >Midori no Hibi</td>
+    
+        </tr>
+        <tr >
+          <td >Mieruko-chan</td>
+    
+        </tr>
+        <tr >
+          <td >Mikakunin de shinkoukei</td>
+    
+        </tr>
+        <tr >
+          <td >Mikakunin de shinkoukei ova</td>
+    
+        </tr>
+        <tr >
+          <td >MOB PSYCHO 100</td>
+    
+        </tr>
+        <tr >
+          <td >mob psycho 100 II</td>
+    
+        </tr>
+        <tr >
+          <td >Mob Psycho 100 III</td>
+    
+        </tr>
+        <tr >
+          <td >momoru.kun ni</td>
+    
+        </tr>
+        <tr >
+          <td >Mondaiji-tachi ga isekai kara kuru sou
+            desu yo?</td>
+    
+        </tr>
+        <tr >
+          <td >Monster Musume no Iru Nichijou</td>
+    
+        </tr>
+        <tr >
+          <td >Motto To Love Ru ~trouble~</td>
+    
+        </tr>
+        <tr >
+          <td >mouse</td>
+    
+        </tr>
+        <tr >
+          <td >Munou na Nana</td>
+    
+        </tr>
+        <tr >
+          <td >Murenase! seton</td>
+    
+        </tr>
+        <tr >
+          <td >Mushoku Tensei: Isekai Ittara Honki Dasu
+            2nd Season</td>
+    
+        </tr>
+        <tr >
+          <td >Nakanohito Genome [Jikkyouchuu]</td>
+    
+        </tr>
+        <tr >
+          <td >nana</td>
+    
+        </tr>
+        <tr >
+          <td >nanatsu no taizai</td>
+    
+        </tr>
+        <tr >
+          <td >Nanatsu no Taizai Movie 2: Hikari ni
+            Norowareshi Mono-tachi</td>
+    
+        </tr>
+        <tr >
+          <td >Nanatsu no Taizai: Fundo no Shinpan</td>
+    
+        </tr>
+        <tr >
+          <td >Nanatsu no Taizai: Kamigami no Gekirin</td>
+    
+        </tr>
+        <tr >
+          <td >NANBAKA </td>
+    
+        </tr>
+        <tr >
+          <td >Naruto </td>
+    
+        </tr>
+        <tr >
+          <td >Naruto shippuden</td>
+    
+        </tr>
+        <tr >
+          <td >nazo no kanojo x</td>
+    
+        </tr>
+        <tr >
+          <td >Nejimaki Seirei Senki: Tenkyou no
+            Alderamin</td>
+    
+        </tr>
+        <tr >
+          <td >NEKOMONOGATARI</td>
+    
+        </tr>
+        <tr >
+          <td >Neon Genesis Evangelion</td>
+    
+        </tr>
+        <tr >
+          <td >NIJIIRO DAYS</td>
+    
+        </tr>
+        <tr >
+          <td >nisekoi</td>
+    
+        </tr>
+        <tr >
+          <td >NISEKOI </td>
+    
+        </tr>
+        <tr >
+          <td >NISEKOI 2</td>
+    
+        </tr>
+        <tr >
+          <td >NISEMONOGATARI</td>
+    
+        </tr>
+        <tr >
+          <td >No game No life</td>
+    
+        </tr>
+        <tr >
+          <td >No guns life </td>
+    
+        </tr>
+        <tr >
+          <td >No. 6</td>
+    
+        </tr>
+        <tr >
+          <td >Noblesse</td>
+    
+        </tr>
+        <tr >
+          <td >nogizaka haruka no himitsu</td>
+    
+        </tr>
+        <tr >
+          <td >Noragami</td>
+    
+        </tr>
+        <tr >
+          <td >Noumin Kanren no Skill bakka Agetetara
+            Nazeka Tsuyoku Natta</td>
+    
+        </tr>
+        <tr >
+          <td >Nyan koi</td>
+    
+        </tr>
+        <tr >
+          <td >Nyan koi!</td>
+    
+        </tr>
+        <tr >
+          <td >Oda Cinnamon Nobunaga</td>
+    
+        </tr>
+        <tr >
+          <td >Okami-san to Shichinin no Nakama-tachi</td>
+    
+        </tr>
+        <tr >
+          <td >okusama ga seito kaichou</td>
+    
+        </tr>
+        <tr >
+          <td >OKUSAMA GA SEITOKAICHOU!</td>
+    
+        </tr>
+        <tr >
+          <td >OKUSAMA GA SEITOKAICHOU!+! PLUS</td>
+    
+        </tr>
+        <tr >
+          <td >omamori himeri</td>
+    
+        </tr>
+        <tr >
+          <td >omamori-himeri</td>
+    
+        </tr>
+        <tr >
+          <td >Omiai Aite wa Oshiego, Tsuyokina,
+            Mondaiji</td>
+    
+        </tr>
+        <tr >
+          <td >One piece</td>
+    
+        </tr>
+        <tr >
+          <td >ONE PIECE PELICULA 13 FILM: GOLD</td>
+    
+        </tr>
+        <tr >
+          <td >one punch man</td>
+    
+        </tr>
+        <tr >
+          <td >One punch man 2</td>
+    
+        </tr>
+        <tr >
+          <td >onegai teacher</td>
+    
+        </tr>
+        <tr >
+          <td >Onii-chan Dakedo Ai Sae Areba Kankeinai
+            yo ne</td>
+    
+        </tr>
+        <tr >
+          <td >Ore dake Haireru Kakushi Dungeon</td>
+    
+        </tr>
+        <tr >
+          <td >ore ga ojousama</td>
+    
+        </tr>
+        <tr >
+          <td >Ore Monogatari!!</td>
+    
+        </tr>
+        <tr >
+          <td >Ore no Kanojo to Osananajimi ga Shuraba
+            Sugiru</td>
+    
+        </tr>
+        <tr >
+          <td >Ore wo Suki nano wa Omae dake ka yo</td>
+    
+        </tr>
+        <tr >
+          <td >Ore wo Suki nano wa Omae dake ka yo:
+            Oretachi no Game Set</td>
+    
+        </tr>
+        <tr >
+          <td >oregairu</td>
+    
+        </tr>
+        <tr >
+          <td >oregairu zoku</td>
+    
+        </tr>
+        <tr >
+          <td >oregairu/oregairu zoku</td>
+    
+        </tr>
+        <tr >
+          <td >OREIMO</td>
+    
+        </tr>
+        <tr >
+          <td >OREIMO 2</td>
+    
+        </tr>
+        <tr >
+          <td >Osananajimi ga Zettai ni Makenai Love
+            Comedy</td>
+    
+        </tr>
+        <tr >
+          <td >Oshiete! Galko-chan</td>
+    
+        </tr>
+        <tr >
+          <td >Otome Game no Hametsu Flag shika Nai
+            Akuyaku Reijou ni Tensei shiteshimatta...</td>
+    
+        </tr>
+        <tr >
+          <td >Otome Game Sekai wa Mob ni Kibishii Sekai
+            desu</td>
+    
+        </tr>
+        <tr >
+          <td >Otome wa Boku ni Koishiteru</td>
+    
+        </tr>
+        <tr >
+          <td >Otome wa boku ni koishiteru: Futari no
+            Elder</td>
+    
+        </tr>
+        <tr >
+          <td >Otonari no Tenshi-sama ni Itsunomanika
+            Dame Ningen ni Sareteita Ken</td>
+    
+        </tr>
+        <tr >
+          <td >Ouran Host Club</td>
+    
+        </tr>
+        <tr >
+          <td >OUSAMA GAME</td>
+    
+        </tr>
+        <tr >
+          <td >Ousama Ranking</td>
+    
+        </tr>
+        <tr >
+          <td >OVERLORD</td>
+    
+        </tr>
+        <tr >
+          <td >OVERLORD II</td>
+    
+        </tr>
+        <tr >
+          <td >Overlord III</td>
+    
+        </tr>
+        <tr >
+          <td >Overlord IV</td>
+    
+        </tr>
+        <tr >
+          <td >Owari no seraph</td>
+    
+        </tr>
+        <tr >
+          <td >parasitic beasts</td>
+    
+        </tr>
+        <tr >
+          <td >Peter Grill to Kenja no Jikan</td>
+    
+        </tr>
+        <tr >
+          <td >photokano</td>
+    
+        </tr>
+        <tr >
+          <td >Planet with</td>
+    
+        </tr>
+        <tr >
+          <td >Platinum End</td>
+    
+        </tr>
+        <tr >
+          <td >Plunderer </td>
+    
+        </tr>
+        <tr >
+          <td >Princess Connect! Re:Dive</td>
+    
+        </tr>
+        <tr >
+          <td >princess lover</td>
+    
+        </tr>
+        <tr >
+          <td >Princess Resurrection</td>
+    
+        </tr>
+        <tr >
+          <td >rail war</td>
+    
+        </tr>
+        <tr >
+          <td >rakudai no cavarly</td>
+    
+        </tr>
+        <tr >
+          <td >re no kanajou wo shinjiteru</td>
+    
+        </tr>
+        <tr >
+          <td >Re:life</td>
+    
+        </tr>
+        <tr >
+          <td >RE:ZERO KARA HAJIMERU ISEKAI SEIKATSU</td>
+    
+        </tr>
+        <tr >
+          <td >Recorder to Randoseru Do (RARO
+            NI�O-HOMBRE XD)</td>
+    
+        </tr>
+        <tr >
+          <td >Recorder to Randoseru Re</td>
+    
+        </tr>
+        <tr >
+          <td >Re-Main </td>
+    
+        </tr>
+        <tr >
+          <td >renai boukun</td>
+    
+        </tr>
+        <tr >
+          <td >rewrite</td>
+    
+        </tr>
+        <tr >
+          <td >Rokka no Yuusha</td>
+    
+        </tr>
+        <tr >
+          <td >Rokudenashi Majutsu Koushi to Akashic
+            Records</td>
+    
+        </tr>
+        <tr >
+          <td >Romantikku Kira</td>
+    
+        </tr>
+        <tr >
+          <td >Romeo x Juliet</td>
+    
+        </tr>
+        <tr >
+          <td >Rosario + Vampire</td>
+    
+        </tr>
+        <tr >
+          <td >Rougo ni Sonaete Isekai de 8-manmai no
+            Kinka wo Tamemasu</td>
+    
+        </tr>
+        <tr >
+          <td >saenai heroine no sodatekata</td>
+    
+        </tr>
+        <tr >
+          <td >SAIJAKU MUHAI NO BAHAMUT</td>
+    
+        </tr>
+        <tr >
+          <td >SAIKI KUSUO NO ?-NAN</td>
+    
+        </tr>
+        <tr >
+          <td >SAIKIN, IMOUTO NO YOUSU GA CHOTTO
+            OKASHIINDA GA</td>
+    
+        </tr>
+        <tr >
+          <td >Saikyou Onmyouji no Isekai Tenseiki</td>
+    
+        </tr>
+        <tr >
+          <td >Sakamichi no Apollon</td>
+    
+        </tr>
+        <tr >
+          <td >Sakamoto desu ga?</td>
+    
+        </tr>
+        <tr >
+          <td >Sakurada reset</td>
+    
+        </tr>
+        <tr >
+          <td >Sakurako-san no ashimoto ni wa shitai ga
+            umatteiru</td>
+    
+        </tr>
+        <tr >
+          <td >Sakurasou no pet na kanojo </td>
+    
+        </tr>
+        <tr >
+          <td >sankarea</td>
+    
+        </tr>
+        <tr >
+          <td >sankera</td>
+    
+        </tr>
+        <tr >
+          <td >School Rumble</td>
+    
+        </tr>
+        <tr >
+          <td >School Rumble Nigakki</td>
+    
+        </tr>
+        <tr >
+          <td >Seijo no Maryoku wa Bannou Desu</td>
+    
+        </tr>
+        <tr >
+          <td >seiken Tsukai no world break</td>
+    
+        </tr>
+        <tr >
+          <td >Seikoku no Dragonar</td>
+    
+        </tr>
+        <tr >
+          <td >Seirei Gensouki </td>
+    
+        </tr>
+        <tr >
+          <td >seirei tsukai no blade dance</td>
+    
+        </tr>
+        <tr >
+          <td >Seiren</td>
+    
+        </tr>
+        <tr >
+          <td >seishun buta yarou wa bunny girl senpai
+            no yume wo mina</td>
+    
+        </tr>
+        <tr >
+          <td >seitokai yakuindomo</td>
+    
+        </tr>
+        <tr >
+          <td >Sekai Saikou no Ansatsusha, Isekai Kizoku
+            ni Tensei suru</td>
+    
+        </tr>
+        <tr >
+          <td >Sekirei</td>
+    
+        </tr>
+        <tr >
+          <td >Senpai ga Uzai Kouhai no Hanashi</td>
+    
+        </tr>
+        <tr >
+          <td >Senran Kagura</td>
+    
+        </tr>
+        <tr >
+          <td >Sentouin, Hakenshimasu!</td>
+    
+        </tr>
+        <tr >
+          <td >Seven Knights Revolution: Eiyuu no
+            Keishousha</td>
+    
+        </tr>
+        <tr >
+          <td >Sewayaki kitsune no senko-san</td>
+    
+        </tr>
+        <tr >
+          <td >Shachou, Battle no jikan desu!</td>
+    
+        </tr>
+        <tr >
+          <td >Shakugan no shana</td>
+    
+        </tr>
+        <tr >
+          <td >Shakunetsu Kabaddi</td>
+    
+        </tr>
+        <tr >
+          <td >Shichisei no subaru</td>
+    
+        </tr>
+        <tr >
+          <td >Shijou Saikyou no Daimaou, Murabito A ni
+            Tensei suru</td>
+    
+        </tr>
+        <tr >
+          <td >Shijou saikyou no deshi kenichi </td>
+    
+        </tr>
+        <tr >
+          <td >Shijou saikyou no deshi kenichi OVA</td>
+    
+        </tr>
+        <tr >
+          <td >Shiki oriori</td>
+    
+        </tr>
+        <tr >
+          <td >Shikkakumon no Saikyou Kenja</td>
+    
+        </tr>
+        <tr >
+          <td >Shimoneta to Iu Gainen ga Sonzai Shinai
+            Taikutsu na Sekai</td>
+    
+        </tr>
+        <tr >
+          <td >Shin Gekijouban Initial D: Legend 1 -
+            Kakusei</td>
+    
+        </tr>
+        <tr >
+          <td >Shin Gekijouban Initial D: Legend 2 -
+            Tousou</td>
+    
+        </tr>
+        <tr >
+          <td >Shin Gekijouban Initial D: Legend 3 -
+            Mugen</td>
+    
+        </tr>
+        <tr >
+          <td >Shin no
+            Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life
+            suru Koto ni Shima</td>
+        </tr>
+        <tr >
+          <td >Shin Shinka no Mi: Shiranai Uchi ni
+            Kachigumi Jinsei</td>
+    
+        </tr>
+        <tr >
+          <td >Shinchou Yuusha: Kono Yuusha ga Ore Tueee
+            Kuse ni Shinchou Sugiru</td>
+    
+        </tr>
+        <tr >
+          <td >SHINGEKI NO KYOJIN</td>
+    
+        </tr>
+        <tr >
+          <td >Shinka no Mi: Shiranai Uchi ni Kachigumi
+            Jinsei</td>
+    
+        </tr>
+        <tr >
+          <td >Shinmai Maou no Testament</td>
+    
+        </tr>
+        <tr >
+          <td >Shinmai Maou no testament BURST</td>
+    
+        </tr>
+        <tr >
+          <td >Shinmai Maou no Testament Departures</td>
+    
+        </tr>
+        <tr >
+          <td >Shinmai Renkinjutsushi no Tenpo Keiei</td>
+    
+        </tr>
+        <tr >
+          <td >shinmao no testament</td>
+    
+        </tr>
+        <tr >
+          <td >Shinobi no Ittoki</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma: Gou no Sara</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma: ni no Sara</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma: San no Sara</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma: San no Sara -
+            Toutsuki Ressha-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Shokugeki no Souma: Shin no Sara</td>
+    
+        </tr>
+        <tr >
+          <td >SK8 </td>
+    
+        </tr>
+        <tr >
+          <td >SKY WIZARDS ACADEMY</td>
+    
+        </tr>
+        <tr >
+          <td >Slime Taoshite 300-nen, Shiranai Uchi ni
+            Level Max ni Nattemashita</td>
+    
+        </tr>
+        <tr >
+          <td >Sono Bisque Doll wa Koi wo Suru</td>
+    
+        </tr>
+        <tr >
+          <td >Sora no Otoshimono</td>
+    
+        </tr>
+        <tr >
+          <td >Soredemo Sekai wa Utsukushii</td>
+    
+        </tr>
+        <tr >
+          <td >Sounan Desu ka?</td>
+    
+        </tr>
+        <tr >
+          <td >souryo to majiwaru shikiyoku no yoru ni</td>
+    
+        </tr>
+        <tr >
+          <td >sousei no onmouji</td>
+    
+        </tr>
+        <tr >
+          <td >Spy x Family</td>
+    
+        </tr>
+        <tr >
+          <td >strike the blood</td>
+    
+        </tr>
+        <tr >
+          <td >strike the blood II</td>
+    
+        </tr>
+        <tr >
+          <td >strike the blood III</td>
+    
+        </tr>
+        <tr >
+          <td >Strike the Blood: Valkyria no Oukoku-hen</td>
+    
+        </tr>
+        <tr >
+          <td >suki.itte li na yo</td>
+    
+        </tr>
+        <tr >
+          <td >Sukitte Iinayo</td>
+    
+        </tr>
+        <tr >
+          <td >Sukitte linayo</td>
+    
+        </tr>
+        <tr >
+          <td >Sunohara-sou no kanrinin-san</td>
+    
+        </tr>
+        <tr >
+          <td >Super Cub</td>
+    
+        </tr>
+        <tr >
+          <td >suzumiya haruhi</td>
+    
+        </tr>
+        <tr >
+          <td >sword art online</td>
+    
+        </tr>
+        <tr >
+          <td >SWORD ART ONLINE ALTERNATIVE: GUN GALE
+            ONLINE</td>
+    
+        </tr>
+        <tr >
+          <td >Sword Art Online: Alicization</td>
+    
+        </tr>
+        <tr >
+          <td >Sword Art Online: Alicization - War of
+            Underworld</td>
+    
+        </tr>
+        <tr >
+          <td >Sword art online: ordinal scale</td>
+    
+        </tr>
+        <tr >
+          <td >TABOO TATTOO</td>
+    
+        </tr>
+        <tr >
+          <td >TADA-KUN WA KOI WO SHINAI</td>
+    
+        </tr>
+        <tr >
+          <td >Taimadou gakuen 35 shiken shoutai </td>
+    
+        </tr>
+        <tr >
+          <td >Tanaka-kun wa Itsumo Kedaruge</td>
+    
+        </tr>
+        <tr >
+          <td >Tari Tari</td>
+    
+        </tr>
+        <tr >
+          <td >Tate no yuusha</td>
+    
+        </tr>
+        <tr >
+          <td >Tate no Yuusha no Nariagari Season 2</td>
+    
+        </tr>
+        <tr >
+          <td >Tatoeba Last Dungeon Mae no Mura no
+            Shounen ga Joban no Machi de Kurasu Youna Monogatari </td>
+    
+        </tr>
+        <tr >
+          <td >Tayutama Kiss on my Deity</td>
+    
+        </tr>
+        <tr >
+          <td >tejina-senpai</td>
+    
+        </tr>
+        <tr >
+          <td >Tenchi Souzou Design-bu</td>
+    
+        </tr>
+        <tr >
+          <td >Tensai Ouji no Akaji Kokka Saisei Jutsu</td>
+    
+        </tr>
+        <tr >
+          <td >Tensei Kenja no Isekai Life: Dai-2 no
+            Shokugyou wo Ete, Sekai Saikyou ni Narimashita</td>
+    
+        </tr>
+        <tr >
+          <td >Tensei Kizoku no Isekai Boukenroku:
+            Jichou wo Shiranai Kamigami no Shito</td>
+    
+        </tr>
+        <tr >
+          <td >Tensei shitara Ken Deshita</td>
+    
+        </tr>
+        <tr >
+          <td >tensei shitara slime datta ken</td>
+    
+        </tr>
+        <tr >
+          <td >Tensei shitara Slime Datta Ken 2nd
+            Season</td>
+    
+        </tr>
+        <tr >
+          <td >Tensei shitara Slime Datta Ken 2nd Season
+            Part 2</td>
+    
+        </tr>
+        <tr >
+          <td >Tensura Nikki: Tensei shitara Slime Datta
+            Ken</td>
+    
+        </tr>
+        <tr >
+          <td >The daily life of the immortal king</td>
+    
+        </tr>
+        <tr >
+          <td >The Daily Life of the Immortal King 2nd
+            Season</td>
+    
+        </tr>
+        <tr >
+          <td >The God of High School</td>
+    
+        </tr>
+        <tr >
+          <td >to love ru</td>
+    
+        </tr>
+        <tr >
+          <td >Toaru kagaku no railgun</td>
+    
+        </tr>
+        <tr >
+          <td >Toaru Kagaku no Railgun S</td>
+    
+        </tr>
+        <tr >
+          <td >Toaru Majutsu no Index</td>
+    
+        </tr>
+        <tr >
+          <td >Toaru Majutsu no Index II</td>
+    
+        </tr>
+        <tr >
+          <td >Toaru Majutsu no Index III</td>
+    
+        </tr>
+        <tr >
+          <td >Tokimeki memorial only love</td>
+    
+        </tr>
+        <tr >
+          <td >tokyo ghoul</td>
+    
+        </tr>
+        <tr >
+          <td >TOKYO GHOUL:RE</td>
+    
+        </tr>
+        <tr >
+          <td >Tokyo ravens</td>
+    
+        </tr>
+        <tr >
+          <td >Tokyo Revengers: Seiya Kessen-hen</td>
+    
+        </tr>
+        <tr >
+          <td >Tomo-chan wa Onnanoko!</td>
+    
+        </tr>
+        <tr >
+          <td >tonari no kaibutsu-kun</td>
+    
+        </tr>
+        <tr >
+          <td >TONARI NO KAIBUTSU-KUN </td>
+        </tr>
+        <tr >
+          <td >Tonari no seki-kun </td>
+        </tr>
+        <tr >
+          <td >Tondemo Skill de Isekai Hourou Meshi</td>
+        </tr>
+        <tr >
+          <td >TONIKAWA: Over The Moon For You</td>
+        </tr>
+        <tr >
+          <td >Tower of God</td>
+        </tr>
+        <tr >
+          <td >Triage X</td>
+        </tr>
+        <tr >
+          <td >TRINITY SEVEN</td>
+        </tr>
+        <tr >
+          <td >Tsugu Tsugumomo</td>
+        </tr>
+        <tr >
+          <td >tsugumomo</td>
+        </tr>
+        <tr >
+          <td >Tsugumomo ova</td>
+        </tr>
+        <tr >
+          <td >tsuki ga kirei</td>
+        </tr>
+        <tr >
+          <td >Tsuki ga Michibiku Isekai Douchuu</td>
+        </tr>
+        <tr >
+          <td >Tsuujou Kougeki ga Zentai Kougeki de
+            Ni-kai Kougeki no Okaasan wa Suki Desu ka</td>
+        </tr>
+        <tr >
+          <td >Uchi no ko no tame naraba, ore wa
+            moshikashitara maou mo taoseru kamo shirenai</td>
+        </tr>
+        <tr >
+          <td >uchi no maid ga Uzasugiru!</td>
+        </tr>
+        <tr >
+          <td >Ulysses: Jehanne Darc to Renkin no Kishi</td>
+        </tr>
+        <tr >
+          <td >UQ HOLDER</td>
+        </tr>
+        <tr >
+          <td >Ushio to Tora (TV)</td>
+        </tr>
+        <tr >
+          <td >Ushio to Tora (TV) 2nd Season </td>
+        </tr>
+        <tr >
+          <td >Uzaki-chan wa Asobitai! </td>
+        </tr>
+        <tr >
+          <td >Uzaki-chan wa Asobitai! Double</td>
+        </tr>
+        <tr >
+          <td >Val x Love</td>
+        </tr>
+        <tr >
+          <td >Vinland Saga</td>
+        </tr>
+        <tr >
+          <td >Wangan Midnight </td>
+        </tr>
+        <tr >
+          <td >Watashi Ga Motete Dousunda</td>
+        </tr>
+        <tr >
+          <td >Watashi, Nouryoku wa Heikinchi de tte
+            Itta yo ne!</td>
+        </tr>
+        <tr >
+          <td >witch craft works</td>
+        </tr>
+        <tr >
+          <td >Wonder Egg Priority</td>
+        </tr>
+        <tr >
+          <td >WORKING 3</td>
+        </tr>
+        <tr >
+          <td >WORKING! 2</td>
+        </tr>
+        <tr >
+          <td >WORKING!!</td>
+        </tr>
+        <tr >
+          <td >world trigger</td>
+        </tr>
+        <tr >
+          <td >wotaku ni koi wa muzukashii</td>
+        </tr>
+        <tr >
+          <td >Yahari ore no seishun love come wa
+            machigatteiru</td>
+        </tr>
+        <tr >
+          <td >Yakusoku no Neverland</td>
+        </tr>
+        <tr >
+          <td >Yamada-kun to 7-nin no Majo</td>
+        </tr>
+        <tr >
+          <td >Yatogame-chan Kansatsu Nikki</td>
+        </tr>
+        <tr >
+          <td >Yatogame-chan Kansatsu Nikki Nisatsume</td>
+        </tr>
+        <tr >
+          <td >Yesterday wo utatte</td>
+        </tr>
+        <tr >
+          <td >Yofukashi no Uta</td>
+        </tr>
+        <tr >
+          <td >Youjo Senki</td>
+        </tr>
+        <tr >
+          <td >Youjo Senki Movie</td>
+        </tr>
+        <tr >
+          <td >YOUKOSO JITSURYOKU SHIJOU SHUGI NO
+            KYOUSHITSU E</td>
+        </tr>
+        <tr >
+          <td >Youkoso Jitsuryoku Shijou Shugi no
+            Kyoushitsu e (TV) 2nd Season</td>
+        </tr>
+        <tr >
+          <td >YOUNG BLACK JACK</td>
+        </tr>
+        <tr >
+          <td >Yuragai-sou no Yuuna-san</td>
+        </tr>
+        <tr >
+          <td >Yuu Yuu Hakusho</td>
+        </tr>
+        <tr >
+          <td >Yuusha Party wo Tsuihou sareta Beast
+            Tamer, Saikyoushu no Nekomimi Shoujo to Deau</td>
+        </tr>
+        <tr >
+          <td >Yuusha, Yamemasu</td>
+        </tr>
+        <tr >
+          <td >zero no tsukaima</td>
+        </tr>
+        <tr >
+          <td >Zero no Tsukaima: Final</td>
+        </tr>
+        <tr >
+          <td >Zero no Tsukaima: Futatsuki no Kishi</td>
+        </tr>
+        <tr >
+          <td >Zero no Tsukaima: Princess no Rondo</td>
+        </tr>
+        <tr >
+          <td >Zombieland Saga </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>Artaxia</p>
+  </footer>
+</body>
+</html>

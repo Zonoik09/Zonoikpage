@@ -1,0 +1,201 @@
+/* Estilos para el header */
+header {
+  position: fixed;
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 5em;
+  display: flex; /* Utilizamos flexbox para alinear los elementos del header */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Agregamos un espaciado interno al header */
+  box-sizing: border-box; /* Incluimos el padding dentro del ancho y alto del elemento */
+  border-bottom: 1px solid white ;
+  z-index: 999;
+}
+
+/* Estilos para el logo */
+.logo a{
+  color: #ae54f7;
+  font-size: 40px;
+  position: relative; /* Añadimos posición relativa al elemento */
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo a::after {
+  content: "";
+  position: absolute; /* Posicionamos el borde inferior de manera absoluta */
+  left: 0;
+  bottom: -2px; /* Ajustamos la posición vertical del borde inferior */
+  width: 100%;
+  border-bottom: 1px solid #fff; /* Establecemos un borde inferior blanco */
+}
+
+.logo a:hover {
+  bottom: -2px; /* Ajustamos la posición vertical del borde inferior */
+  border-bottom: 3px solid #ae54f7; /* Establecemos un borde inferior blanco */
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+  margin-top: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utilizamos flexbox para alinear los elementos del menú */
+}
+
+.menu li {
+  border-right: 1px solid #ffffff;
+  padding: 0 10px;
+}
+
+.menu li:last-child {
+  border-right: none; /* Quitamos el borde derecho del último elemento del menú */
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #cc00ff;
+}
+
+.menu .current a {
+  color: #cc00ff;
+}
+
+.menu .current a:hover {
+  color: #fff;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección de flexbox a vertical */
+  background-color: #5a5a5a;
+}
+
+section {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+
+
+/* Pie de pagina */
+footer {
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 5em;
+  display: flex; /* Utilizamos flexbox para alinear los elementos del header */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Agregamos un espaciado interno al header */
+  box-sizing: border-box; /* Incluimos el padding dentro del ancho y alto del elemento */
+}
+
+footer p {
+  color: white;
+}
+
+/*TABLA*/
+
+.Tablaanime {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(219, 219, 219);
+  padding: 0px;
+  width: 700px;
+
+}
+
+.Tablaanime table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.Tablaanime th {
+  padding: 10px;
+  text-align: center;
+  border: 0px;
+  text-transform: uppercase;
+  background-color: #2c2c2c;
+  font-size: 20px;
+  color: white;
+}
+
+.Tablaanime td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+  text-transform: uppercase
+}
+
+.Tablaanime td:hover {
+  background-color: #000000;
+  color: #cc00ff;
+}
+
+.Tablaanime tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.Tablaanime tr:first-child {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.letras {
+  background-color: #2c2c2c;
+  border: 2px solid #cc00ff;
+  display: flex; /* Cambiamos a un diseño flexible */
+  flex-wrap: wrap; /* Aseguramos el ajuste automático de los botones */
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  padding: 10px;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.letras p {
+  color: white;
+  text-align: center;
+  width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
+}
+
+.letras button {
+  background-color: transparent;
+  border: 2px solid #cc00ff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.letras button:hover {
+  background-color: #cc00ff;
+}
+
+#contador {
+  margin-top: 100px;
+}
