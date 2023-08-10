@@ -95,7 +95,6 @@ section {
   height: 57em;
   overflow: hidden;
   background-color: #fdf6ee;
-  border-bottom: 2px solid black;
 }
 
 .banner h1 {
@@ -111,7 +110,6 @@ section {
   flex: 1;
   height: 50%;
   object-fit: cover;
-  border: 2px solid black;
 }
 
 .banner-content {
@@ -207,7 +205,7 @@ footer p {
 /* Slider */
 .container {
   display: flex;
-  background-color: #fdf6ee;
+  background-color: #525252;
   height: 57em;
 }
 
@@ -215,7 +213,8 @@ footer p {
   max-width: 700px;
   max-height: 620px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px black solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-left: 200px;
   margin-top: 100px;
   background-color: white;
